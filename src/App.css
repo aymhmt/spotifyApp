@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #fff;
+  z-index: 1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.light {
+  position: fixed; 
+  transform: translateX(-50%); 
+  width: 1000px; 
+  height: 100vh; 
+  background: radial-gradient(circle, rgba(8, 162, 28, 0.4) 0%, rgba(255, 255, 255, 0) 70%); 
+  box-shadow: none; 
+  z-index: 0; 
+}
+
+.bildirim{
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff30;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.notification-icon{
+  background: none;
+  color: black;
+  display: flex;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  background: none;
+}
+
+.title p{
+  background: none;
+}
+
+.title h5{
+  background: none;
+}
+
+.title-two{
+  background: none;
+  margin: 10px ;
+}
+
+.title-two span{
+  color: rgb(26, 172, 87);
+}
+
+.body{
+  justify-content: center;
+}
+
+.body h1{
+  font-size: 45px;
+  background: none;
+}
+
+.kategori{
+  display: flex;
+  gap: 30px;
+  background: none;
+  overflow: scroll;
+  margin: 50px 10px;
+}
+
+.button{
+  background: none; 
+  padding: 5px 20px;
+  border: 1px outset #fff;
+  border-radius: 20px;
+}
+
+.button span{
+  background: none;
+}
+
+.for-title{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.for-title p{
+  color: rgb(26, 172, 87);
+}
+
+.album{
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+  margin: 20px 0 ;
+}
+
+.music{
+  display: grid;
+  gap: 5px;
+}
+
+.music img{
+  width: 200px;
+}
+
+
+.favori-title{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.favori-title p{
+  color: rgb(26, 172, 87);
+}
+
+.artist{
+  display: flex;
+  overflow: scroll;
+  gap: 30px;
+}
+
+.profile{
+  display: grid;
+  text-align: center;
+  gap: 5px;
+}
+
+.profile img{
+  border-radius: 50%;
+  width: 150px;
+}
+
+.play {
+  display: grid;
+  position: fixed; 
+  width: 80%;      
+  height: 100px;   
+  background-color: rgba(255, 255, 255, 0.7); 
+  z-index: 1000;   
+  bottom: 0;
+  align-items: center; 
+  padding: 0 20px; 
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); 
+  left: 5%;
+  margin: 0 0 20px 0;
+  border-radius: 50px;
+}
+
+.play img{
+  width: 50px;
+  border-radius: 20px;
 }
